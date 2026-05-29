@@ -8,8 +8,8 @@
 
 ```text
 abtest-portfolio/
-├── 01_simulation/          第一层：numpy 模拟实验
-├── 02_kaggle_marketing/    第二层：Kaggle 真实数据分析
+├── 01_simulation/          第一层：numpy 统计原理模拟
+├── 02_kaggle_marketing/    第二层：Kaggle 真实广告数据分析
 ├── 03_udacity_report/      第三层：完整实验设计报告
 └── README.md
 ```
@@ -36,7 +36,7 @@ abtest-portfolio/
 
 ### 第三层：完整实验设计报告（`03_udacity_report/`）
 
-参照 Udacity A/B Testing 课程项目，输出一份完整的实验设计与分析报告。
+参照 Udacity A/B Testing 课程项目，输出一份工业级实验设计与分析报告。
 
 - 实验设计：指标选择、流量分配、样本量估算
 - Sanity Check：不变指标验证实验执行是否正确
@@ -52,3 +52,24 @@ abtest-portfolio/
 | 模拟实验 | numpy 生成 | 双比例 Z 检验 | 功效曲线、样本量与 p-value 关系图 |
 | Kaggle | 真实广告数据 | Z 检验 + 置信区间 | 转化率 lift、业务结论 |
 | Udacity | 课程项目数据 | 多指标联合判断 | 完整实验报告 |
+
+---
+
+## 快速开始
+
+### 环境要求
+
+```bash
+Python 3.10+
+pip install numpy pandas scipy matplotlib statsmodels jupyter
+```
+
+### 运行
+
+```bash
+# 第一层：模拟实验
+python 01_simulation/simulation.py
+
+# 第二层 & 第三层：Jupyter Notebook
+jupyter notebook
+```
